@@ -9,8 +9,6 @@
 import Reusable
 class BasedViewAnimation: UIView, NibOwnerLoadable {
   
-  var runningAnimators: [UIViewPropertyAnimator] = []
-  
   @IBOutlet var control: UIView!
   @IBOutlet var guideline: UIView!
   

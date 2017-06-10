@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4CAD30C66B027BDA54CDEFDB /* Pods_UIViewInteractiveAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A45BB78B09FD7A1EB51126 /* Pods_UIViewInteractiveAnimations.framework */; };
+		6D580D451EEC8C3800F3E7C3 /* InteruptiveAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D580D441EEC8C3800F3E7C3 /* InteruptiveAnimationView.swift */; };
 		6DD99AC01EEC63BA000886F9 /* BasedViewAnimation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD99ABF1EEC63BA000886F9 /* BasedViewAnimation.xib */; };
 		6DD99AC21EEC660D000886F9 /* BasedViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD99AC11EEC660D000886F9 /* BasedViewAnimation.swift */; };
 		6DD99AC41EEC669B000886F9 /* SimpleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD99AC31EEC669B000886F9 /* SimpleAnimationView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D580D441EEC8C3800F3E7C3 /* InteruptiveAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteruptiveAnimationView.swift; sourceTree = "<group>"; };
 		6DD99ABF1EEC63BA000886F9 /* BasedViewAnimation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasedViewAnimation.xib; sourceTree = "<group>"; };
 		6DD99AC11EEC660D000886F9 /* BasedViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasedViewAnimation.swift; sourceTree = "<group>"; };
 		6DD99AC31EEC669B000886F9 /* SimpleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimationView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				6DD99AC31EEC669B000886F9 /* SimpleAnimationView.swift */,
 				6DD99AC51EEC69CE000886F9 /* CustomTimingAnimateView.swift */,
 				6DD99AC71EEC6A15000886F9 /* InteractiveAnimateView.swift */,
+				6D580D441EEC8C3800F3E7C3 /* InteruptiveAnimationView.swift */,
 			);
 			path = UIViewInteractiveAnimations;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				6DD99AC41EEC669B000886F9 /* SimpleAnimationView.swift in Sources */,
 				6DD99AC61EEC69CE000886F9 /* CustomTimingAnimateView.swift in Sources */,
 				6DE583C81EEC557F00E77A55 /* ViewController.swift in Sources */,
+				6D580D451EEC8C3800F3E7C3 /* InteruptiveAnimationView.swift in Sources */,
 				6DE583C61EEC557F00E77A55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8NWXKTJBC;
 				INFOPLIST_FILE = UIViewInteractiveAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.watremez.UIViewInteractiveAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,6 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8NWXKTJBC;
 				INFOPLIST_FILE = UIViewInteractiveAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.watremez.UIViewInteractiveAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
