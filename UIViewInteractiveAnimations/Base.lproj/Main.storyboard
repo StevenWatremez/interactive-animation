@@ -24,20 +24,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0S1-lG-WCO">
                                 <rect key="frame" x="20" y="28" width="335" height="610"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" restorationIdentifier="SimpleAnimationView" translatesAutoresizingMaskIntoConstraints="NO" id="wmI-CW-j65" customClass="SimpleAnimationView" customModule="UIViewInteractiveAnimations" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="152.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" restorationIdentifier="CustomTimingAnimateView" translatesAutoresizingMaskIntoConstraints="NO" id="Qzf-NJ-0Gt" customClass="CustomTimingAnimateView" customModule="UIViewInteractiveAnimations" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="152.5" width="335" height="152.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
                                     <view contentMode="scaleToFill" restorationIdentifier="InteractiveAnimateView" translatesAutoresizingMaskIntoConstraints="NO" id="AGc-mD-v2U" customClass="InteractiveAnimateView" customModule="UIViewInteractiveAnimations" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="305" width="335" height="152.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" restorationIdentifier="InteruptiveAnimationView" translatesAutoresizingMaskIntoConstraints="NO" id="Xqc-CG-zLx" customClass="InteruptiveAnimationView" customModule="UIViewInteractiveAnimations" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="457.5" width="335" height="152.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="610"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
