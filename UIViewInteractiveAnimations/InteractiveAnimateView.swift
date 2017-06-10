@@ -11,8 +11,8 @@ import UIKit
 final class InteractiveAnimateView: BasedViewAnimation {
   
   private enum Constants {
-    static let duration = 0.5
-    static let lowFractionComplete: CGFloat = 0.25
+    static let duration = 0.3
+    static let lowFractionComplete: CGFloat = 0.4
   }
   
   private var animator: UIViewPropertyAnimator!
@@ -32,7 +32,7 @@ final class InteractiveAnimateView: BasedViewAnimation {
     switch recognizer.state {
     case .began:
       let state: State = self.isReverse ? .left : .right
-      self.animator = UIViewPropertyAnimator(duration: Constants.duration, curve: .easeOut) {
+      self.animator = UIViewPropertyAnimator(duration: Constants.duration, curve: .linear) {
         // We need to manage state of the animation
         switch state {
         case .right: self.control.frame = self.control.frame.offsetBy(dx: self.guideline.frame.width, dy: 0)
