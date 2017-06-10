@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,39 +20,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXp-rS-FrX" userLabel="guideline">
-                                <rect key="frame" x="87" y="333" width="200" height="1"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="2Hu-2B-OSy"/>
-                                    <constraint firstAttribute="height" constant="1" id="ye0-Yy-JRO"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOH-yz-waF" userLabel="control">
-                                <rect key="frame" x="57.5" y="304" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.26807326079999999" green="0.70468991989999996" blue="0.98743027449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2Bc-Yo-0G3"/>
-                                    <constraint firstAttribute="width" secondItem="EOH-yz-waF" secondAttribute="height" multiplier="1:1" id="sTt-qf-gKh"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="DKG-u6-P8z" appends="YES" id="9tp-eh-yys"/>
-                                </connections>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0S1-lG-WCO">
+                                <rect key="frame" x="20" y="28" width="335" height="610"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" restorationIdentifier="SimpleAnimationView" translatesAutoresizingMaskIntoConstraints="NO" id="wmI-CW-j65" customClass="SimpleAnimationView" customModule="UIViewInteractiveAnimations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="203.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" restorationIdentifier="CustomTimingAnimateView" translatesAutoresizingMaskIntoConstraints="NO" id="Qzf-NJ-0Gt" customClass="CustomTimingAnimateView" customModule="UIViewInteractiveAnimations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="203.5" width="335" height="203"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" restorationIdentifier="InteractiveAnimateView" translatesAutoresizingMaskIntoConstraints="NO" id="AGc-mD-v2U" customClass="InteractiveAnimateView" customModule="UIViewInteractiveAnimations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="406.5" width="335" height="203.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uXp-rS-FrX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VLb-hv-vpv"/>
-                            <constraint firstItem="uXp-rS-FrX" firstAttribute="top" secondItem="EOH-yz-waF" secondAttribute="bottom" constant="-31" id="XIs-VQ-ahF"/>
-                            <constraint firstItem="uXp-rS-FrX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z8u-Qn-tVg"/>
-                            <constraint firstItem="uXp-rS-FrX" firstAttribute="leading" secondItem="EOH-yz-waF" secondAttribute="trailing" constant="-30" id="u8m-9q-CZa"/>
+                            <constraint firstAttribute="trailing" secondItem="0S1-lG-WCO" secondAttribute="trailing" constant="20" symbolic="YES" id="IJH-ek-gmP"/>
+                            <constraint firstItem="0S1-lG-WCO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JU8-zP-aiH"/>
+                            <constraint firstItem="0S1-lG-WCO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="NBB-1A-ONK"/>
+                            <constraint firstItem="0S1-lG-WCO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="UrC-Mk-L2e"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="control" destination="EOH-yz-waF" id="Tfb-Rf-JyC"/>
-                        <outlet property="guideline" destination="uXp-rS-FrX" id="lTI-3H-nFx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="DKG-u6-P8z">
