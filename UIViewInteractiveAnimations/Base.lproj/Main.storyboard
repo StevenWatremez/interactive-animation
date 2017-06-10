@@ -32,10 +32,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOH-yz-waF" userLabel="control">
                                 <rect key="frame" x="57.5" y="304" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.26807326079999999" green="0.70468991989999996" blue="0.98743027449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2Bc-Yo-0G3"/>
                                     <constraint firstAttribute="width" secondItem="EOH-yz-waF" secondAttribute="height" multiplier="1:1" id="sTt-qf-gKh"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DKG-u6-P8z" appends="YES" id="9tp-eh-yys"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -48,9 +52,15 @@
                     </view>
                     <connections>
                         <outlet property="control" destination="EOH-yz-waF" id="Tfb-Rf-JyC"/>
+                        <outlet property="guideline" destination="uXp-rS-FrX" id="lTI-3H-nFx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DKG-u6-P8z">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="BYZ-38-t0r" id="6qA-Ux-fHg"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>

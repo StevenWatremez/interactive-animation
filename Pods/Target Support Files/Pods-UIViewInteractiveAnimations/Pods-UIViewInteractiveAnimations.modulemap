@@ -1,0 +1,6 @@
+framework module Pods_UIViewInteractiveAnimations {
+  umbrella header "Pods-UIViewInteractiveAnimations-umbrella.h"
+
+  export *
+  module * { export * }
+}

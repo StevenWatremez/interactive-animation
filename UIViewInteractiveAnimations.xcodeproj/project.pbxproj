@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CAD30C66B027BDA54CDEFDB /* Pods_UIViewInteractiveAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A45BB78B09FD7A1EB51126 /* Pods_UIViewInteractiveAnimations.framework */; };
 		6DE583C61EEC557F00E77A55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE583C51EEC557F00E77A55 /* AppDelegate.swift */; };
 		6DE583C81EEC557F00E77A55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE583C71EEC557F00E77A55 /* ViewController.swift */; };
 		6DE583CB1EEC557F00E77A55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE583C91EEC557F00E77A55 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		6DE583CC1EEC557F00E77A55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DE583CF1EEC557F00E77A55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DE583D11EEC557F00E77A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB63EE4758E80BA25D8D9E58 /* Pods-UIViewInteractiveAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIViewInteractiveAnimations.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIViewInteractiveAnimations/Pods-UIViewInteractiveAnimations.release.xcconfig"; sourceTree = "<group>"; };
+		BFFB7F886E81E6FA66608F29 /* Pods-UIViewInteractiveAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIViewInteractiveAnimations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIViewInteractiveAnimations/Pods-UIViewInteractiveAnimations.debug.xcconfig"; sourceTree = "<group>"; };
+		C6A45BB78B09FD7A1EB51126 /* Pods_UIViewInteractiveAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIViewInteractiveAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAD30C66B027BDA54CDEFDB /* Pods_UIViewInteractiveAnimations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				6DE583C41EEC557F00E77A55 /* UIViewInteractiveAnimations */,
 				6DE583C31EEC557F00E77A55 /* Products */,
+				F54EF876BC2445724C5F5538 /* Pods */,
+				E89D097DC937181B71DFDD8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = UIViewInteractiveAnimations;
 			sourceTree = "<group>";
 		};
+		E89D097DC937181B71DFDD8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6A45BB78B09FD7A1EB51126 /* Pods_UIViewInteractiveAnimations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F54EF876BC2445724C5F5538 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFFB7F886E81E6FA66608F29 /* Pods-UIViewInteractiveAnimations.debug.xcconfig */,
+				BB63EE4758E80BA25D8D9E58 /* Pods-UIViewInteractiveAnimations.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DE583D41EEC557F00E77A55 /* Build configuration list for PBXNativeTarget "UIViewInteractiveAnimations" */;
 			buildPhases = (
+				0D08AA9C21361AF37C80CE89 /* [CP] Check Pods Manifest.lock */,
 				6DE583BE1EEC557F00E77A55 /* Sources */,
 				6DE583BF1EEC557F00E77A55 /* Frameworks */,
 				6DE583C01EEC557F00E77A55 /* Resources */,
+				C15D0F518EC8955F3170274C /* [CP] Embed Pods Frameworks */,
+				376BF59C86D055A58D68660F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D08AA9C21361AF37C80CE89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		376BF59C86D055A58D68660F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIViewInteractiveAnimations/Pods-UIViewInteractiveAnimations-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C15D0F518EC8955F3170274C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIViewInteractiveAnimations/Pods-UIViewInteractiveAnimations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DE583BE1EEC557F00E77A55 /* Sources */ = {
@@ -267,6 +342,7 @@
 		};
 		6DE583D51EEC557F00E77A55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFFB7F886E81E6FA66608F29 /* Pods-UIViewInteractiveAnimations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8NWXKTJBC;
@@ -281,6 +357,7 @@
 		};
 		6DE583D61EEC557F00E77A55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB63EE4758E80BA25D8D9E58 /* Pods-UIViewInteractiveAnimations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C8NWXKTJBC;
