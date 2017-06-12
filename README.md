@@ -1,3 +1,3 @@
 # Interactive Animations
 
-<img src="main-view.png" width="300">
+<img src="main-view.png" width="500">
