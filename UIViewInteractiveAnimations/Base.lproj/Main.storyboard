@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,8 +24,18 @@
                                 <rect key="frame" x="20" y="28" width="335" height="610"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" restorationIdentifier="InteractiveAnimateView" translatesAutoresizingMaskIntoConstraints="NO" id="AGc-mD-v2U" customClass="InteractiveAnimateView" customModule="UIViewInteractiveAnimations" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="610"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="305"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Simple Interactive Animation"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" restorationIdentifier="MultipleAnimateView" translatesAutoresizingMaskIntoConstraints="NO" id="ZFq-ON-Tyg" customClass="MultipleAnimateView" customModule="UIViewInteractiveAnimations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="305" width="335" height="305"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Multiple Interactive Animations"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                             </stackView>

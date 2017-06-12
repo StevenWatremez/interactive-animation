@@ -13,18 +13,19 @@
             <connections>
                 <outlet property="control" destination="Xz0-e4-mDK" id="0gS-8Q-3I2"/>
                 <outlet property="guideline" destination="Rbi-ji-vzT" id="Fms-eM-hAE"/>
+                <outlet property="titleLabel" destination="gnA-6a-PRC" id="SfJ-Sh-v6w"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="324" height="100"/>
+            <rect key="frame" x="0.0" y="0.0" width="324" height="194"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cop-uc-QmJ">
-                    <rect key="frame" x="0.0" y="0.0" width="324" height="100"/>
+                    <rect key="frame" x="0.0" y="0.0" width="324" height="194"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbi-ji-vzT" userLabel="guideline">
-                            <rect key="frame" x="77" y="49" width="200" height="1"/>
+                            <rect key="frame" x="77" y="96" width="200" height="1"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="Esg-Ol-z6s"/>
@@ -32,7 +33,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xz0-e4-mDK" userLabel="control">
-                            <rect key="frame" x="47" y="20" width="60" height="60"/>
+                            <rect key="frame" x="47" y="67" width="60" height="60"/>
                             <color key="backgroundColor" red="0.26807326079999999" green="0.70468991989999996" blue="0.98743027449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <gestureRecognizers/>
                             <constraints>
@@ -44,13 +45,22 @@
                                 <outletCollection property="gestureRecognizers" destination="HYJ-SF-pMw" appends="YES" id="jeQ-Vc-2qH"/>
                             </connections>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based Animation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnA-6a-PRC">
+                            <rect key="frame" x="20" y="20" width="284" height="36"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="Rbi-ji-vzT" firstAttribute="top" secondItem="Xz0-e4-mDK" secondAttribute="bottom" constant="-31" id="DfX-47-bFx"/>
                         <constraint firstItem="Rbi-ji-vzT" firstAttribute="centerY" secondItem="cop-uc-QmJ" secondAttribute="centerY" id="S7R-0s-MxG"/>
+                        <constraint firstItem="gnA-6a-PRC" firstAttribute="leading" secondItem="cop-uc-QmJ" secondAttribute="leading" constant="20" symbolic="YES" id="WMK-U3-B9w"/>
                         <constraint firstItem="Rbi-ji-vzT" firstAttribute="leading" secondItem="Xz0-e4-mDK" secondAttribute="trailing" constant="-30" id="cSE-Ox-g7c"/>
                         <constraint firstItem="Xz0-e4-mDK" firstAttribute="width" secondItem="Xz0-e4-mDK" secondAttribute="height" multiplier="1:1" id="i36-vf-GgU"/>
+                        <constraint firstAttribute="trailing" secondItem="gnA-6a-PRC" secondAttribute="trailing" constant="20" symbolic="YES" id="mUu-cT-GqR"/>
+                        <constraint firstItem="gnA-6a-PRC" firstAttribute="top" secondItem="cop-uc-QmJ" secondAttribute="top" constant="20" symbolic="YES" id="qVe-fv-LGr"/>
                         <constraint firstItem="Rbi-ji-vzT" firstAttribute="centerX" secondItem="cop-uc-QmJ" secondAttribute="centerX" constant="15" id="yP3-Ag-6F5"/>
                     </constraints>
                 </view>
@@ -63,7 +73,7 @@
                 <constraint firstAttribute="trailing" secondItem="cop-uc-QmJ" secondAttribute="trailing" id="qWJ-IY-gEV"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="59" y="-282"/>
+            <point key="canvasLocation" x="59" y="-235"/>
         </view>
         <tapGestureRecognizer id="ldc-tn-qPM">
             <connections>

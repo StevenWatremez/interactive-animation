@@ -9,6 +9,13 @@
 import Reusable
 class BasedViewAnimation: UIView, NibOwnerLoadable {
   
+  @IBInspectable var title: String = "Based Animation" {
+    didSet {
+      self.titleLabel.text = title
+    }
+  }
+  
+  @IBOutlet var titleLabel: UILabel!
   @IBOutlet var control: UIView!
   @IBOutlet var guideline: UIView!
   
@@ -30,6 +37,6 @@ class BasedViewAnimation: UIView, NibOwnerLoadable {
   @IBAction func handlePan(recognizer: UIPanGestureRecognizer) {}
   
   private func commonInit() {
-    self.control.layer.cornerRadius = 30
+    self.control.layer.cornerRadius = 10
   }
 }
